@@ -1,5 +1,6 @@
 $('.slider-container').slick({
 
+
   infinite: false, //* безкінечний скрол
   speed: 300, //* швидкість анімації скролу
   slidesToScroll: 1, //* кількість карнинок при скролі
