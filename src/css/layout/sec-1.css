@@ -1,4 +1,36 @@
-.sec-1{
-    padding:100px 0 400px 0;
-    background-color: rgb(131, 131, 131);
+.sec-1 {
+  padding: 100px 0 400px 0;
+  background-color: rgb(131, 131, 131);
 }
+
+.gallery {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.galery-small {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  transition: all 0.3s ease-in-out;
+}
+.small-image {
+  object-fit: cover;
+  width: 320px;
+  height: 260px;
+  border: 1px solid black;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+
+.main-image {
+  object-fit: cover;
+  width: 420px;
+  height: 548px;
+  border: 1px solid black;
+transition: all 0.3s ease-in-out;
+}
+
