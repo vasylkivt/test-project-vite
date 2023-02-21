@@ -1,5 +1,7 @@
 $('.slider-container').slick({
-  // * Кнопки для лайф сервера
+
+  // // * Кнопки для лайф сервера
+
   // prevArrow:
   //   '<button type="button" class="my-slick my-slick-prev"> <svg width="12" height="12"><use href="./images/icons/sprite.svg#button-left"></use></svg></button>',
   // nextArrow:
