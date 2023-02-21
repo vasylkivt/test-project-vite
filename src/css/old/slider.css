@@ -1,0 +1,141 @@
+.restaurant .container {
+  position: relative;
+  overflow: hidden;
+}
+
+.restaurant-title {
+  margin-bottom: 24px;
+  color: var(--title-color-dark);
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.restaurant-desc {
+  width: 221px;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29; /* 18px/14 */
+
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.slider-container {
+  margin-bottom: 82px;
+}
+
+.restaurant-btns {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.restaurant-btn {
+  padding: 8px 18px;
+  border: 0.8px solid var(--accent-color-dark);
+  border-radius: 32px;
+  background-color: transparent;
+  color: var(--text-color-dark);
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.slick-list {
+  overflow: visible;
+}
+.slick-card {
+  max-width: 157px;
+}
+.slick-card:not(:last-child) {
+  margin-right: 20px;
+}
+
+.my-slick {
+  position: absolute;
+  bottom: -42px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+}
+
+.my-slick-prev {
+  left: 0px;
+}
+.my-slick-next {
+  left: 44px;
+}
+
+.my-slick-prev.slick-disabled,
+.my-slick-next.slick-disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant-wrap-text {
+    display: flex;
+    gap: 32px;
+  }
+  .restaurant-title {
+    margin-bottom: 80px;
+    font-size: 68px;
+  }
+  .slider-container {
+    margin-bottom: 108px;
+  }
+  .slick-card:not(:last-child) {
+    margin-right: 32px;
+  }
+  .my-slick {
+    bottom: -68px;
+    width: 36px;
+    height: 36px;
+  }
+  .my-slick-next {
+    left: 68px;
+  }
+  .slick-card {
+  max-width: 336px;
+
+}
+}
+
+@media screen and (min-width: 1440px) {
+  .restaurant {
+    position: relative;
+    padding-top: 44px;
+    padding-bottom: 113px;
+  }
+
+  .restaurant-btns {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+  .restaurant-btn {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 18px;
+  }
+  .my-slick {
+    bottom: -87px;
+  }
+  .my-slick-prev {
+    left: calc(50% - 52px);
+    transform: translateX(-50%);
+  }
+  .my-slick-next {
+    left: calc(50% + 52px);
+    transform: translateX(-50%);
+  }
+  .slick-card {
+  max-width: 266px;
+
+}
+}
