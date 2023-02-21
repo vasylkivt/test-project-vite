@@ -12,10 +12,13 @@
 @import url('./base/common.css');
 
 @import url('./components/container.css');
+@import url('./components/anchor.css');
 
 @import url('./layout/header.css');
 @import url('./layout/hero.css');
 @import url('./layout/section-slider.css');
+@import url('./layout/sec-1.css');
+@import url('./layout/sec-2.css');
 
 @import url('./layout/footer.css');
 
