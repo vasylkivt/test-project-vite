@@ -1,6 +1,4 @@
-.restaurant{
-  /* display: none; */
-}
+
 
 .restaurant .container {
   position: relative;
@@ -46,35 +44,43 @@
   text-transform: uppercase;
 }
 
-.slider-container {
+.slider{
   margin-bottom: 82px;
+}
+
+.slider-container{
+  margin-bottom: 18px;
 }
 
 .slider-card:not(:last-child) {
   margin-right: 20px;
 }
 
-.my-slick {
-  position: absolute;
-  bottom: -42px;
-  width: 24px;
-  height: 24px;
-  border: none;
+.slider-btn-wrap{
+  display: flex;
+  gap: 20px;
+}
+
+.slider-btn-icon{
+width: 12px;
+  height: 12px;
+}
+.slider-btn-prev,
+.slider-btn-next{
+
   background-color: transparent;
+  border: none;
+  width:  24px;
+  height: 24px;
+  
 }
 
-.my-slick-prev {
-  left: 0px;
-}
-.my-slick-next {
-  left: 44px;
-}
-
-.my-slick-prev.slick-disabled,
-.my-slick-next.slick-disabled {
-  opacity: 0.3;
+.slick-disabled{
   cursor: not-allowed;
+  fill: 
+rgba(18, 18, 18, 0.3);
 }
+
 
 
 @media screen and (min-width: 768px) {
@@ -86,23 +92,29 @@
     margin-bottom: 80px;
     font-size: 68px;
   }
-  .slider-container {
+  .slider {
     margin-bottom: 108px;
   }
+  .slider-container{
+  margin-bottom: 32px;
+}
+.slider-btn-prev,
+.slider-btn-next{
+  
+  width: 36px;
+  height: 36px;
+}
+.slider-btn-icon{
+width: 16px;
+  height: 16px;
+}
   
 
 .slider-card:not(:last-child) {
   margin-right: 32px;
   
 }
-.my-slick {
-    bottom: -68px;
-    width: 36px;
-    height: 36px;
-  }
-  .my-slick-next {
-    left: 68px;
-  }
+
 
 }
 
@@ -123,15 +135,11 @@
     padding-bottom: 9px;
     font-size: 18px;
   }
- 
- .my-slick-prev {
-    left: calc(50% - 52px);
-    transform: translateX(-50%);
-  }
-  .my-slick-next {
-    left: calc(50% + 52px);
-    transform: translateX(-50%);
-  }
+ .slider-btn-wrap{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 
 
 }
